@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "strictNullChecks": false,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es6",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "strict": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "@pages/*": [
+                "src/pages/*"
+            ]
+        }
+    },
+    "include": [
+        "*.ts"
+    ]
+}
