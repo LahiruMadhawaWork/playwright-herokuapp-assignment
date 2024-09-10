@@ -1,0 +1,20 @@
+{
+  "name": "playwright-herokuapp-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "playwright test runner",
+    "playwright typescript framework"
+  ],
+  "author": "Lahiru Madhawa",
+  "license": "ISC",
+  "description": "playwright-herokuapp-assignment",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
