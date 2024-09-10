@@ -3,7 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npx playwright install --with-deps",  
+    "test-smoke-chrome-headless-traceon": "npx playwright test --grep @smoke --workers=5 --trace on --project=Google-Chrome",
+    "test-smoke-chrome-headed-traceon": "npx playwright test --headed --grep @smoke --workers=5 --trace on --project=Google-Chrome",
+    "test-smoke-firefox-headed-traceon": "npx playwright test --headed --grep @smoke --workers=5 --trace on --project=firefox",
+    "test-smoke-firefox-headless-traceon": "npx playwright test --grep @smoke --workers=5 --trace on --project=firefox",
+    "test-smoke-edge-headed-traceon": "npx playwright test --headed --grep @smoke --workers=5 --trace on --project=Microsoft-Edge",
+    "test-smoke-edge-headless-traceon": "npx playwright test --grep @smoke --workers=5 --trace on --project=Microsoft-Edge",
+    "test-smoke-webkit-headed-traceon": "npx playwright test --headed --grep @smoke --workers=5 --trace on --project=webkit",
+    "test-smoke-webkit-headless-traceon": "npx playwright test --grep @smoke --workers=5 --trace on --project=webkit",
+    "test-chrome-headed": "npx playwright test --headed --workers=5 --project=Google-Chrome",
+    "test-chrome-headless": "npx playwright test --headed --workers=5 --project=Google-Chrome",
+    "test-chrome-headless-traceson": "npx playwright test --workers=5 --trace on --project=Google-Chrome",
+    "test-chrome-headed-traceson": "npx playwright test --headed --workers=5 --trace on --project=Google-Chrome",
+    "show-report": "npx playwright show-report"
   },
   "keywords": [
     "playwright test runner",
