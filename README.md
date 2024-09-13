@@ -78,20 +78,21 @@ npm run postinstall
 - firefox
 - edge
 - webkit
-2.1. Headed mode and trace on full parallel
-```sh
-npm run test-smoke-<browser>-headed-traceon
-```
-2.2. Headless mode and trace on full parallel
-```sh
-npm run test-smoke-<browser>-headless-traceon
-```
-3. Also the capability is enabled to:
-3.1. Run the test file from the file location with the trace enabled only on failure
-```sh
-npm run test-chrome-<headed/headless>
-```
-3.2. Run the test file from the file location with trace on always
-```sh
-npm run test-chrome-<headed/headless>-traceson
-```
+
+  2.1. Headed mode and trace on full parallel
+  ```sh
+  npm run test-smoke-<browser>-headed-traceon
+  ```
+  2.2. Headless mode and trace on full parallel
+  ```sh
+  npm run test-smoke-<browser>-headless-traceon
+  ```
+  3. Also the capability is enabled to:
+  3.1. Run the test file from the file location with the trace enabled only on failure
+  ```sh
+  npm run test-chrome-<headed/headless>
+  ```
+  3.2. Run the test file from the file location with trace on always
+  ```sh
+  npm run test-chrome-<headed/headless>-traceson
+  ```
