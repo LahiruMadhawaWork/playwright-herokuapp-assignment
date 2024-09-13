@@ -23,7 +23,8 @@
   },
   "keywords": [
     "playwright test runner",
-    "playwright typescript framework"
+    "playwright typescript framework",
+    "tdd"
   ],
   "author": "Lahiru Madhawa",
   "license": "ISC",
