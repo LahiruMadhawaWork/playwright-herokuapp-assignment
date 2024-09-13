@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test";
-import PlaywrighBasetWrapper from "../base/playwrightBase";
+import PlaywrighBaseWrapper from "../base/playwrightBase";
 
-export default class InitialPage extends PlaywrighBasetWrapper {
+export default class InitialPage extends PlaywrighBaseWrapper {
     // Constructor
     constructor(public page: Page) {
         super(page);

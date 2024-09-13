@@ -1,4 +1,4 @@
-import {Browser, BrowserContext, chromium, Page, test, expect} from "@playwright/test";
+import {Browser, BrowserContext, chromium, Page, test} from "@playwright/test";
 import InitialPage from "../src/pages/initial.page";
 import ENV from "../src/utils/env";
 import Assert from "../src/base/assertBase";

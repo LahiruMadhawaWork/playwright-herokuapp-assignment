@@ -1,5 +1,5 @@
 import { Locator, Page } from "@playwright/test";
-export default class PlaywrighBasetWrapper {
+export default class PlaywrighBaseWrapper {
 
     constructor(public page: Page) {
     }
