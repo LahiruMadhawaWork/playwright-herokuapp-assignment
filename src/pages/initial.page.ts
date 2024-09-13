@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test";
-import Wrapper from "../base/Wrapper";
+import PlaywrighBasetWrapper from "../base/playwrightBase";
 
-export default class InitialPage extends Wrapper {
+export default class InitialPage extends PlaywrighBasetWrapper {
     // Constructor
     constructor(public page: Page) {
         super(page);
@@ -13,7 +13,7 @@ export default class InitialPage extends Wrapper {
     }
 
     public async clickLinkElements(elementname: string){
-        const linkElement = await this.findLocator("//div[@id='content']//a[@href and(text()='" + elementname + "')]")
+        const linkElement = await this.findLocator("//div[@id='content']//a[@href and(text()='" + elementname + "')]");
         await linkElement?.click();
     }
 }
