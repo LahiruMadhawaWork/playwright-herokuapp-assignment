@@ -8,12 +8,7 @@
         "resolveJsonModule": true,
         "strict": true,
         "sourceMap": true,
-        "baseUrl": ".",
-        "paths": {
-            "@pages/*": [
-                "src/pages/*"
-            ]
-        }
+        "baseUrl": "."
     },
     "include": [
         "*.ts"

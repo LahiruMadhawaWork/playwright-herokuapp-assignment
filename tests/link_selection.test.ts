@@ -49,13 +49,11 @@ linkTextData.forEach(data => {
     
         await test.step(`Navigate to Landing Page to select ${data.name}`, async () => {
             await objInitialPage.navigateToPage(page, ENV.BASE_URL);
-            //expect.soft(page.url()).toBe(ENV.BASE_URL);
             await objAssert.assertURLToBe(page, ENV.BASE_URL);
         })
         
         await test.step(`Click on link: ${data.name}`, async () => {
             await objInitialPage.clickLinkElements(data.name);
-            // expect.soft(page.url()).toBe(ENV.BASE_URL+data.path);
             await objAssert.assertURLToBe(page, ENV.BASE_URL+data.path);
             await objAssert.assertToBeVisibile(data.element);
 
