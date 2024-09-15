@@ -25,7 +25,7 @@ test("ContextMenu link selection @Smoke", async (testInfo) => {
         await objInitialPage.assertInitialPageURL();
     })
     
-    await test.step("Click on ChallengingDOM link", async () => {
+    await test.step("Click on ContextMenu link", async () => {
         await objInitialPage.clickOnContextMenuLink();
         await objContextMenuPage.assertContextMenuURL();
         await objContextMenuPage.assertForHeaderContextMenu();
