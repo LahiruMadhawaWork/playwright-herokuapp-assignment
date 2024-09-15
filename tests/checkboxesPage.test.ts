@@ -25,7 +25,7 @@ test("Checkboxes link selection @Smoke", async (testInfo) => {
         await objInitialPage.assertInitialPageURL();
     })
     
-    await test.step("Click on ChallengingDOM link", async () => {
+    await test.step("Click on Checkboxes link", async () => {
         await objInitialPage.clickOnCheckboxesLink();
         await objCheckboxesPage.assertCheckboxesURL();
         await objCheckboxesPage.assertForHeaderCheckboxes();
